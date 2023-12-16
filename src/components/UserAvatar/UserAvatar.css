@@ -1,0 +1,16 @@
+.user-avatar{
+    display: flex;  
+    align-items: center;
+    gap: 10px;
+}
+
+.avatar{
+    width: 50px;
+    height: 50px;
+    background: lightskyblue;
+    border-radius: 50%;
+}
+
+.user-name p{
+    color: #c3c2c2;
+}
