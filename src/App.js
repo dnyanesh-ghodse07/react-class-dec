@@ -6,17 +6,43 @@
 // How to share data between components
 // react fragments
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./style.css";
-import Post from "./components/Post/Post";
-import Counter from "./components/Counter";
+import TodoList from "./TodoList";
+// import Counter from "./components/Counter";
+// import Post from "./components/Post/Post";
+// import Counter from "./components/Counter";
 
 function App() {
+  const [posts, setPosts] = useState([]);
+  const [fetchCount,setFetchCount] = useState(1);
+
+  useEffect(() => {
+    const postData = fetch("https://jsonplaceholder.typicode.com/posts");
+    postData.then((res) => res.json()).then((data) => setPosts(data));
+  }, [fetchCount]);
+
+  const handleFetchCount = () =>{
+    setFetchCount(prev => prev + 1)
+  }
 
   return (
     <div className="App">
-      <Post/>
-      <Counter/>
+      {/* <Post/> */}
+      {/* <Counter/> */}
+      {/* <h1>Hello React</h1>
+      <h3>{fetchCount}</h3>
+      <div className="list">
+      {posts.map((post) => {
+        return (
+          <div key={post.id}>
+            <p>{post.title}</p>
+          </div>
+        );
+      })}
+      </div>
+      <button onClick={handleFetchCount}>Refetch Posts</button> */}
+      <TodoList/>
     </div>
   );
 }

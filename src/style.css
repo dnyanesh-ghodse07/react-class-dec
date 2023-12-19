@@ -10,4 +10,10 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
+    padding: 40px 0;
+}
+
+.list{
+    height: 70vh;
+    overflow: scroll;
 }
