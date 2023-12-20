@@ -11,9 +11,6 @@
     align-items: center;
     height: 100vh;
     padding: 40px 0;
+    background: #eee;
 }
 
-.list{
-    height: 70vh;
-    overflow: scroll;
-}

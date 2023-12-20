@@ -1,0 +1,47 @@
+.list{
+    height: 70vh;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-top: 8px;
+}
+
+
+.list-item{
+    border: 1px solid #eee;
+    background: #fff;
+    padding: 10px;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icons{
+    color: tomato;
+    cursor: pointer;
+}
+
+.input-fields{
+    display: flex;
+    gap: 3px;
+}
+
+.text-input{
+    padding: 8px 10px;
+    border: none;
+    border: 1px solid #eee;
+    outline: none;
+    font-size: 18px;
+}
+
+.add-btn{
+    padding: 8px 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    border-radius: 5px;
+}
